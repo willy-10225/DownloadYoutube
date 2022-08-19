@@ -1,4 +1,3 @@
-from ast import While
 from pytube import YouTube
 import pandas as pd
 import re
