@@ -41,7 +41,7 @@ def DowloadYoutubeVideo(url):
     name=yt.title.strip('/')
     name=re.sub('\/','',name)
 
-    ffmpeg.output(audio_stream,video_stream, f'{yt.title}.mp4').run()
+    ffmpeg.output(audio_stream,video_stream, f'{name}.mp4').run()
 
     # 删除音频和视频
     os.remove("video_download.mp4")
