@@ -60,8 +60,9 @@ while True:
     else:
         print('error')
 
+
 for url in urls:
-    DowloadYoutubeVideo(url)
-
-
-
+    try:
+        DowloadYoutubeVideo(url)
+    except:
+        print('url error')

@@ -41,4 +41,7 @@ while True:
         
         
 for url in urls:
-    DownloadYoutubeMusic(url)
+    try:
+        DownloadYoutubeMusic(url)
+    except:
+        print('error url')
